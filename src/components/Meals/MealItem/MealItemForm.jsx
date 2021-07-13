@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./MealItemFrom.module.css";
 import Input from "../../UI/Input";
+import { props } from "bluebird";
 
 const MealItemForm = () => {
   return (
@@ -8,7 +9,7 @@ const MealItemForm = () => {
       <Input
         label="Amount"
         input={{
-          id: "amount",
+          id: "amount" + props.id,
           type: "number",
           min: "1",
           max: "5",

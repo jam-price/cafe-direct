@@ -11,7 +11,7 @@ const MealItem = ({ name, id, description, price }) => {
         <div className={classes.price}>{`£${price}`}</div>
       </div>
       <div>
-        <MealItemForm />
+        <MealItemForm id={id} />
       </div>
     </li>
   );

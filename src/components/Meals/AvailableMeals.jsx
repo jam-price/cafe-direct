@@ -36,6 +36,7 @@ const COFFEES = [
 const AvailableMeals = () => {
   const coffeeList = COFFEES.map((coffee) => (
     <MealItem
+      id={coffee.id}
       name={coffee.name}
       key={coffee.id}
       description={coffee.description}
